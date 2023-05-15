@@ -1,5 +1,6 @@
 module.exports = {
-  greet: function(){
-    console.log('Hello!');
+  greet: function(name){
+    const greeting = name ? `Hello, ${name}!` : 'Hello!';
+    console.log(greeting);
   }
 };
